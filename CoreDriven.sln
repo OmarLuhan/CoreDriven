@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.Dto", "src\CoreD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.Data", "src\CoreDriven.Data\CoreDriven.Data.csproj", "{3EFBB13C-C623-4F5F-9998-41BC7B7884AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.UseCases", "CoreDriven.UseCases\CoreDriven.UseCases.csproj", "{26F02099-65C5-43D5-B2FD-AB7F6F1AAB35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.UseCases", "src\CoreDriven.UseCases\CoreDriven.UseCases.csproj", "{26F02099-65C5-43D5-B2FD-AB7F6F1AAB35}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.Notificator", "src\CoreDriven.Notificator\CoreDriven.Notificator.csproj", "{BFDE2D14-00E8-4275-A501-0E799D56E939}"
 EndProject

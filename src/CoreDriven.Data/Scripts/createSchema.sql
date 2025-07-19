@@ -1,0 +1,36 @@
+drop database if exists app;
+create database app;
+use app;
+CREATE TABLE Roles (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    value VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Users (
+    id CHAR(36) PRIMARY KEY DEFAULT (UUID()),
+    name VARCHAR(20) NOT NULL,
+    email VARCHAR (255) UNIQUE NOT NULL,
+    imageUrl VARCHAR(500) NULL,
+    imageName VARCHAR(100) NULL,
+    password VARCHAR(500) NOT NULL,
+    roleId INT NOT NULL,
+    active BOOL DEFAULT TRUE NOT NULL,
+    creationDate DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    FOREIGN KEY (roleId) REFERENCES Roles(id)
+);
+CREATE TABLE Categories (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    description VARCHAR(100) NOT NULL UNIQUE,
+    active BOOL DEFAULT TRUE NOT NULL,
+    creationDate DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+CREATE TABLE Products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    codeEan13 VARCHAR(13) UNIQUE NOT NULL, 
+    name VARCHAR(100) NOT NULL,
+    categoryId INT NULL,
+    price DECIMAL (10,2) DEFAULT 0.0 NOT NULL,
+    active BOOL DEFAULT FALSE NOT NULL,
+    creationDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (categoryId) REFERENCES Categories(id) ON DELETE SET NULL
+);
