@@ -9,8 +9,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b0ed471-1de5-484e-9491-89e6981a7b9a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/CoreDriven.UseCases/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreDriven.UseCases/CoreDriven.UseCases.csproj" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/CoreDrive.Utils.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Pagination/MetaData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Pagination/PagedList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Response/Response.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Response/ResponseHeader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Spec/BaseQueryParams.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDriven.Api/Controllers/UsersController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDriven.Data/Repositories/UserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDriven.Dto/Users/UserDtos.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/Mappers/UserMappers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/UseCasesDy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/Users/Queries/GetUsers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/Users/UserUseCases.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CoreDriven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoreDriven/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoreDriven.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CoreDriven.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Data/DataDy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Data/DataDy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Dto/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Dto/CoreDriven.Dto.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Dto/CoreDriven.Dto.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.UseCases/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CoreDriven.UseCases/CoreDriven.UseCases.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/CoreDriven.UseCases.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,27 +43,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/CoreDrive.Utils/Pagination/MetaData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3071aLad5E4F5Bd1dcd5JrBXIe8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.CoreDriven.Api: http.executor": "Run",
+    "HTTP Request.CoreDriven.Api | #1.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.CoreDriven.Api: http">
+    <configuration name="CoreDriven.Api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="CoreDriven.Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
@@ -71,6 +106,11 @@
         <option name="Build" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.CoreDriven.Api | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,7 +120,8 @@
       <option name="presentableId" value="Default" />
       <updated>1747627000837</updated>
       <workItem from="1747627002013" duration="257000" />
-      <workItem from="1752963863117" duration="2266000" />
+      <workItem from="1752963863117" duration="7116000" />
+      <workItem from="1752984452514" duration="7201000" />
     </task>
     <servers />
   </component>
