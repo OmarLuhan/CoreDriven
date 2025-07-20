@@ -1,4 +1,5 @@
 using CoreDriven.Data;
+using CoreDriven.UseCases;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -6,8 +7,10 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 builder.Services.AddData(builder.Configuration);
+builder.Services.AddUseCases();
 WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.

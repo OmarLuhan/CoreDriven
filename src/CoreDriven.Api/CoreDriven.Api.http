@@ -1,6 +1,6 @@
 @CoreDriven.Api_HostAddress = http://localhost:5117
 
-GET {{CoreDriven.Api_HostAddress}}/weatherforecast/
+GET {{CoreDriven.Api_HostAddress}}/Users/
 Accept: application/json
 
 ###

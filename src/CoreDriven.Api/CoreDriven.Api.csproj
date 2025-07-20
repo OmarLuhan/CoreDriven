@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\CoreDriven.Data\CoreDriven.Data.csproj" />
+      <ProjectReference Include="..\CoreDriven.UseCases\CoreDriven.UseCases.csproj" />
     </ItemGroup>
 
 </Project>
