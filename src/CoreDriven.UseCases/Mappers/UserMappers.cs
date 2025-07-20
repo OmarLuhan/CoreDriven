@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using CoreDriven.Data.Entities;
 using CoreDriven.Dto.Users;
 
@@ -5,7 +6,7 @@ namespace CoreDriven.UseCases.Mappers;
 
 public static class UserMappers
 {
-    public static UserDto ToDto(this User user) => new()
+    public static Expression<Func<User, UserDto>> ToDto => user => new UserDto
     {
         Id = user.Id,
         Name = user.Name,
@@ -15,4 +16,5 @@ public static class UserMappers
         RoleId = user.RoleId,
         Active = user.Active
     };
+
 }

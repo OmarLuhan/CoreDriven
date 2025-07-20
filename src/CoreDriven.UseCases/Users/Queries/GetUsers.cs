@@ -22,7 +22,7 @@ public class GetUsers(IUserRepository repository)
             ? query.OrderByDescending(u => EF.Property<object>(u, bqp.SortBy))
             : query.OrderBy(u => EF.Property<object>(u, bqp.SortBy));
         var queryDto = query.Include(u => u.Role)
-            .Select(u => u.ToDto());
+            .Select(UserMappers.ToDto);
         return await PagedList<UserDto>.ToPagedList(
             queryDto,
             bqp.PageNumber,

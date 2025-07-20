@@ -9,31 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b0ed471-1de5-484e-9491-89e6981a7b9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/CoreDrive.Utils.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Pagination/MetaData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Pagination/PagedList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Response/Response.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Response/ResponseHeader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDrive.Utils/Spec/BaseQueryParams.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDriven.Api/Controllers/UsersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDriven.Data/Repositories/UserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDriven.Dto/Users/UserDtos.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/Mappers/UserMappers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/UseCasesDy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/Users/Queries/GetUsers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/Users/UserUseCases.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoreDriven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoreDriven/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreDriven.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CoreDriven.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Data/DataDy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Data/DataDy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Dto/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Dto/CoreDriven.Dto.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Dto/CoreDriven.Dto.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.UseCases/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.UseCases/CoreDriven.UseCases.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/CoreDriven.UseCases.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +97,7 @@
       <updated>1747627000837</updated>
       <workItem from="1747627002013" duration="257000" />
       <workItem from="1752963863117" duration="7116000" />
-      <workItem from="1752984452514" duration="7201000" />
+      <workItem from="1752984452514" duration="7624000" />
     </task>
     <servers />
   </component>
