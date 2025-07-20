@@ -5,7 +5,7 @@ using CoreDriven.Dto.Users;
 using CoreDriven.UseCases.Mappers;
 using Microsoft.EntityFrameworkCore;
 
-namespace CoreDriven.UseCases.Users;
+namespace CoreDriven.UseCases.Users.Queries;
 
 public class GetUsers(IUserRepository repository) 
 {

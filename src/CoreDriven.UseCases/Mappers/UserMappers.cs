@@ -1,7 +1,7 @@
 using CoreDriven.Data.Entities;
 using CoreDriven.Dto.Users;
 
-namespace CoreDriven.Dto.Mappers;
+namespace CoreDriven.UseCases.Mappers;
 
 public static class UserMappers
 {
@@ -15,6 +15,4 @@ public static class UserMappers
         RoleId = user.RoleId,
         Active = user.Active
     };
-    public static List<UserDto>ToDto(this IEnumerable<User> users) => 
-        users.Select(user => user.ToDto()).ToList();
 }
