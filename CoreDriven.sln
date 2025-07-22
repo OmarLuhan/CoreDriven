@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.Notificator", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.UnitTests", "tests\CoreDriven.UnitTests\CoreDriven.UnitTests.csproj", "{6E12A356-72B8-47EE-989D-1438076C5E22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDrive.Utils", "src\CoreDrive.Utils\CoreDrive.Utils.csproj", "{AC6F04C3-1EFD-4790-8273-919AC1CB3748}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.Utils", "src\CoreDriven.Utils\CoreDriven.Utils.csproj", "{AC6F04C3-1EFD-4790-8273-919AC1CB3748}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
