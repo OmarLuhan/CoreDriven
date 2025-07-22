@@ -13,7 +13,9 @@ public class AddUser(IGenericRepository<User> repository)
         {
             throw new ArgumentNullException(nameof(dto), "User cannot be null.");
         }
-        User user=await repository.AddAsync(dto.ToCreateDto());
+        User creation = dto.ToCreateDto();
+        creation.Password = "password encrypted"; // Placeholder for password encryption logic
+        User user=await repository.AddAsync(creation);
         return user.ToDto();
     }
 }
