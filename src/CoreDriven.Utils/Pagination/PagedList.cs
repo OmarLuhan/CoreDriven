@@ -1,6 +1,7 @@
 using System.Collections;
 using Microsoft.EntityFrameworkCore;
-namespace CoreDrive.Utils.Pagination;
+
+namespace CoreDriven.Utils.Pagination;
 
 
 public class PagedList<T>(List<T> items, int count, int pageNumber, int pageSize)

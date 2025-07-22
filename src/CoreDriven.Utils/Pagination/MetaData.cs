@@ -1,4 +1,4 @@
-namespace CoreDrive.Utils.Pagination;
+namespace CoreDriven.Utils.Pagination;
 
 public class MetaData
 {

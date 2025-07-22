@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace CoreDrive.Utils.Response;
+namespace CoreDriven.Utils.Response;
 
 public class Response<T>
 {

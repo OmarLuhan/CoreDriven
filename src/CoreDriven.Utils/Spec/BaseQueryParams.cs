@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
-namespace CoreDrive.Utils.Spec;
+
+namespace CoreDriven.Utils.Spec;
 public record BaseQueryParams
 {
     [Range(1, int.MaxValue)] 

@@ -1,8 +1,8 @@
 using System.Text.Json;
-using CoreDrive.Utils.Pagination;
+using CoreDriven.Utils.Pagination;
 using Microsoft.AspNetCore.Http;
 
-namespace CoreDrive.Utils.Response;
+namespace CoreDriven.Utils.Response;
 
 public static class ResponseHeader
 {
