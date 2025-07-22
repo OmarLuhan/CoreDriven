@@ -1,6 +1,16 @@
 @CoreDriven.Api_HostAddress = http://localhost:5117
 
-GET {{CoreDriven.Api_HostAddress}}/Users/
+GET {{CoreDriven.Api_HostAddress}}/users/
 Accept: application/json
 
+###
+POST{{CoreDriven.Api_HostAddress}}/Users/
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "jon@doe.com",
+  "roleId": 1,
+  "active": true
+}
 ###
