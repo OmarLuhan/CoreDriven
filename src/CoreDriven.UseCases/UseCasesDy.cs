@@ -1,4 +1,5 @@
 using CoreDriven.UseCases.Users;
+using CoreDriven.UseCases.Users.Commands;
 using CoreDriven.UseCases.Users.Queries;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,6 +14,7 @@ public static class UseCasesDy
     private static void AddUserUseCases(this IServiceCollection service)
     {
         service.AddScoped<UserUseCases>()
-            .AddScoped<GetUsers>();
+            .AddScoped<GetUsers>()
+            .AddScoped<AddUser>();
     }
 }

@@ -6,13 +6,38 @@ namespace CoreDriven.UseCases.Mappers;
 
 public static class UserMappers
 {
-    public static Expression<Func<User, UserDto>> ToDto => user => new UserDto
+    public static Expression<Func<User, UserDto>> ToDtoExpr => user => new UserDto
+    (
+        user.Id,
+        user.Name,
+        user.Email,
+        user.ImageUrl,
+        user.ImageName,
+        user.RoleId,
+        user.Role.Value,
+        user.Active
+    );
+    public static User ToUser(this UserDto dto)=> new()
     {
-        Id = user.Id,
+        Name = dto.Name,
+        Email = dto.Email,
+        RoleId = dto.RoleId
+    };
+    public static UserDto ToDto(this User user) => new
+    (
+        user.Id,
+        user.Name,
+        user.Email,
+        user.ImageUrl,
+        user.ImageName,
+        user.RoleId,
+        user.Role.Value,
+        user.Active
+    );
+    public static User ToCreateDto(this UserCreateDto user) => new()
+    {
         Name = user.Name,
         Email = user.Email,
-        ImageUrl = user.ImageUrl,
-        ImageName = user.ImageName,
         RoleId = user.RoleId,
         Active = user.Active
     };

@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CoreDrive.Utils\CoreDrive.Utils.csproj" />
+      <ProjectReference Include="..\CoreDriven.Utils\CoreDriven.Utils.csproj" />
       <ProjectReference Include="..\CoreDriven.Data\CoreDriven.Data.csproj" />
       <ProjectReference Include="..\CoreDriven.Dto\CoreDriven.Dto.csproj" />
     </ItemGroup>
