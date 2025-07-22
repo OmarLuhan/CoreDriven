@@ -1,8 +1,8 @@
-using CoreDrive.Utils.Pagination;
-using CoreDrive.Utils.Spec;
 using CoreDriven.Data.Repositories;
 using CoreDriven.Dto.Users;
 using CoreDriven.UseCases.Mappers;
+using CoreDriven.Utils.Pagination;
+using CoreDriven.Utils.Spec;
 using Microsoft.EntityFrameworkCore;
 
 namespace CoreDriven.UseCases.Users.Queries;
@@ -22,7 +22,7 @@ public class GetUsers(IUserRepository repository)
             ? query.OrderByDescending(u => EF.Property<object>(u, bqp.SortBy))
             : query.OrderBy(u => EF.Property<object>(u, bqp.SortBy));
         var queryDto = query.Include(u => u.Role)
-            .Select(UserMappers.ToDto);
+            .Select(UserMappers.ToDtoExpr);
         return await PagedList<UserDto>.ToPagedList(
             queryDto,
             bqp.PageNumber,
