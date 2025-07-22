@@ -17,12 +17,6 @@ public static class UserMappers
         user.Role.Value,
         user.Active
     );
-    public static User ToUser(this UserDto dto)=> new()
-    {
-        Name = dto.Name,
-        Email = dto.Email,
-        RoleId = dto.RoleId
-    };
     public static UserDto ToDto(this User user) => new
     (
         user.Id,
@@ -31,10 +25,10 @@ public static class UserMappers
         user.ImageUrl,
         user.ImageName,
         user.RoleId,
-        user.Role.Value,
+        user.Role?.Value ?? "",
         user.Active
     );
-    public static User ToCreateDto(this UserCreateDto user) => new()
+    public static User ToUser(this UserCreateDto user) => new()
     {
         Name = user.Name,
         Email = user.Email,

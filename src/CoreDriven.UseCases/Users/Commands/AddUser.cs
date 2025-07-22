@@ -13,7 +13,7 @@ public class AddUser(IGenericRepository<User> repository)
         {
             throw new ArgumentNullException(nameof(dto), "User cannot be null.");
         }
-        User creation = dto.ToCreateDto();
+        var creation = dto.ToUser();
         creation.Password = "password encrypted"; // Placeholder for password encryption logic
         User user=await repository.AddAsync(creation);
         return user.ToDto();

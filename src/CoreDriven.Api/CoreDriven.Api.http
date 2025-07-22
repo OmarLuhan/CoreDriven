@@ -10,8 +10,8 @@ POST {{baseUrl}}/users/
 Content-Type: application/json
 
 {
-  "name": "John Does",
-  "email": "jon@does.com",
+  "name": "John Does4",
+  "email": "jon@does.crom4",
   "roleId": 1,
   "active": true
 }
