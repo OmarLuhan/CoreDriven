@@ -10,15 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0ed471-1de5-484e-9491-89e6981a7b9a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CoreDriven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CoreDriven/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreDriven.sln" beforeDir="false" afterPath="$PROJECT_DIR$/CoreDriven.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Api/Controllers/UsersController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.Data/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.Data/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.UseCases/CoreDriven.UseCases.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/CoreDriven.UseCases.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.UseCases/Mappers/UserMappers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/Mappers/UserMappers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.UseCases/UseCasesDy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/UseCasesDy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.UseCases/Users/Commands/AddUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/Users/Commands/AddUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoreDriven.UseCases/Users/UserUseCases.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoreDriven.UseCases/Users/UserUseCases.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +28,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/mike/dev/dotnet/CoreDriven/src/CoreDriven.Data/Entities/User.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/mike/dev/dotnet/CoreDriven/src/CoreDriven.UseCases/Mappers/UserMappers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/mike/dev/dotnet/CoreDriven/src/CoreDriven.UseCases/Users/Queries/GetUsers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/CoreDriven.Utils/Pagination/MetaData.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -70,7 +64,13 @@
     <configuration name="All in CoreDriven.Api" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http">
       <method v="2" />
     </configuration>
+    <configuration name="CoreDriven.Api | Get Users" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" executionIdentifier="Get Users" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="CoreDriven.Api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="CoreDriven.Api | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/CoreDriven.Api/CoreDriven.Api.http" executionIdentifier="#2" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="CoreDriven.Api: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -105,8 +105,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.All in CoreDriven.Api" />
+        <item itemvalue="HTTP Request.CoreDriven.Api | #2" />
+        <item itemvalue="HTTP Request.CoreDriven.Api | Get Users" />
         <item itemvalue="HTTP Request.CoreDriven.Api | #1" />
+        <item itemvalue="HTTP Request.All in CoreDriven.Api" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +123,7 @@
       <workItem from="1752963863117" duration="7116000" />
       <workItem from="1752984452514" duration="7624000" />
       <workItem from="1752992232246" duration="1577000" />
-      <workItem from="1753194235532" duration="2366000" />
+      <workItem from="1753194235532" duration="3055000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,6 @@
+{
+  "status": 500,
+  "data": null,
+  "success": false,
+  "message": "An error occurred while saving the entity changes. See the inner exception for details."
+}

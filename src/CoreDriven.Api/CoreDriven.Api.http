@@ -1,10 +1,12 @@
-@CoreDriven.Api_HostAddress = http://localhost:5117
+### Variables
+@baseUrl = http://localhost:5117
 
-GET {{CoreDriven.Api_HostAddress}}/users/
+### Get Users
+GET {{baseUrl}}/users/
 Accept: application/json
 
-###
-POST{{CoreDriven.Api_HostAddress}}/Users/
+### Create User
+POST {{baseUrl}}/users/
 Content-Type: application/json
 
 {
