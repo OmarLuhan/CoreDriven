@@ -31,7 +31,7 @@ public class GetUsersTest
             {
                 Id = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
                 Name = "Juan Pérez",
-                Email = "",
+                Email = "juan@test.com",
                 ImageUrl = "",
                 ImageName = "",
                 Password = "password123",
@@ -43,7 +43,7 @@ public class GetUsersTest
             {
                 Id = new Guid("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"),
                 Name = "María García",
-                Email = "",
+                Email = "maria@test.com",
                 ImageUrl = "",
                 ImageName = "",
                 Password = "password123",
@@ -55,7 +55,7 @@ public class GetUsersTest
             {
                 Id = new Guid("cccccccc-cccc-cccc-cccc-cccccccccccc"),
                 Name = "Carlos López",
-                Email = "",
+                Email = "carlos@test.com",
                 ImageUrl = "",
                 ImageName = "",
                 Password = "password123",
