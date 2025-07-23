@@ -10,6 +10,7 @@
 
     <ItemGroup>
         <PackageReference Include="coverlet.collector" Version="6.0.2"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.7" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0"/>
         <PackageReference Include="NUnit" Version="4.2.2"/>
         <PackageReference Include="NUnit.Analyzers" Version="4.4.0"/>
@@ -18,6 +19,15 @@
 
     <ItemGroup>
         <Using Include="NUnit.Framework"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="UseCases\Users\Command\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\CoreDriven.Data\CoreDriven.Data.csproj" />
+      <ProjectReference Include="..\..\src\CoreDriven.UseCases\CoreDriven.UseCases.csproj" />
     </ItemGroup>
 
 </Project>

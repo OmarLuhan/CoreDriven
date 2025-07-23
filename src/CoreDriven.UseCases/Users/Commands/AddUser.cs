@@ -5,7 +5,7 @@ using CoreDriven.UseCases.Mappers;
 
 namespace CoreDriven.UseCases.Users.Commands;
 
-public class AddUser(IGenericRepository<User> repository)
+public class AddUser(IUserRepository repository)
 {
     public async Task<UserDto> Execute(UserCreateDto dto)
     {
