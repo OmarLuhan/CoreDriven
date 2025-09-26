@@ -9,5 +9,6 @@ public record BaseQueryParams
     public int PageSize { get; set; } = 10;
     public string SortBy { get; set; } ="Id"; 
     public bool SortDesc { get; set; } = true;
-    public string? Value { get; set; } = null;
+    public string? Value { get; set; } 
+    
 }

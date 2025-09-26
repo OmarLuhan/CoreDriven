@@ -29,4 +29,5 @@ public class GetUsers(IUserRepository repository)
             bqp.PageSize
         );
     }
+  
 }
