@@ -34,3 +34,10 @@ CREATE TABLE Products (
     creationDate DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (categoryId) REFERENCES Categories(id) ON DELETE SET NULL
 );
+-- stored procedures
+DELIMITER //
+CREATE PROCEDURE GetUsers(in pageNumber int,in pageSize int, in sortDesc bool,in value varchar(20), in sortBy varchar(20))
+BEGIN
+    SELECT * FROM Users; 
+END //
+DELIMITER ;
