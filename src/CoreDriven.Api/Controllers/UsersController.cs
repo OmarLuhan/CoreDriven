@@ -21,6 +21,7 @@ public class UsersController(UserUseCases userCases) : ControllerBase
       response.Status = HttpStatusCode.OK;
       response.Success = true;
       response.Data = users;
+      Log("Get all users successfully");
       return Ok(response);
     }
     catch (Exception ex)

@@ -14,7 +14,7 @@ public class UserRepository(Entities.AppContext context) : GenericRepository<Use
 
    public async Task DeleteAsync(Guid id)
    {
-      User? entity = Query().FirstOrDefault(u => u.Id == id);
+      User? entity = await Query().FirstOrDefaultAsync(u => u.Id == id);
       if (entity != null)
       {
          _context.Users.Remove(entity);
