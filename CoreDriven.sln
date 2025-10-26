@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.UnitTests", "tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.Utils", "src\CoreDriven.Utils\CoreDriven.Utils.csproj", "{AC6F04C3-1EFD-4790-8273-919AC1CB3748}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{87A02594-00AC-45A9-A84C-3177FDE6C00C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreDriven.Kiota", "client\CoreDriven.Kiota\CoreDriven.Kiota.csproj", "{42B6EA0B-9A06-42FC-991E-20FFB1901C98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,7 @@ Global
 		{BFDE2D14-00E8-4275-A501-0E799D56E939} = {BA2BD7BB-ABD6-4AAA-A3D0-37225E949F63}
 		{6E12A356-72B8-47EE-989D-1438076C5E22} = {B0235882-D96E-4E1E-9070-EF769CBEC160}
 		{AC6F04C3-1EFD-4790-8273-919AC1CB3748} = {BA2BD7BB-ABD6-4AAA-A3D0-37225E949F63}
+		{42B6EA0B-9A06-42FC-991E-20FFB1901C98} = {87A02594-00AC-45A9-A84C-3177FDE6C00C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1D407AF2-DF0F-480B-BEBA-127EE99CDDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -61,5 +66,9 @@ Global
 		{AC6F04C3-1EFD-4790-8273-919AC1CB3748}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC6F04C3-1EFD-4790-8273-919AC1CB3748}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC6F04C3-1EFD-4790-8273-919AC1CB3748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42B6EA0B-9A06-42FC-991E-20FFB1901C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B6EA0B-9A06-42FC-991E-20FFB1901C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B6EA0B-9A06-42FC-991E-20FFB1901C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42B6EA0B-9A06-42FC-991E-20FFB1901C98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

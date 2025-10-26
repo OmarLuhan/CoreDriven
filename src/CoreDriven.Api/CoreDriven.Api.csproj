@@ -9,6 +9,7 @@
     <ItemGroup>
         <PackageReference Include="Luhan.io" Version="1.0.6" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+        <PackageReference Include="Scalar.AspNetCore" Version="2.9.0" />
     </ItemGroup>
 
     <ItemGroup>
