@@ -1,4 +1,3 @@
-using System.Net;
 using CoreDriven.Dto.Users;
 using CoreDriven.UseCases.Users;
 using CoreDriven.Utils.Response;
@@ -11,44 +10,33 @@ namespace CoreDriven.Api.Controllers;
 public class UsersController(UserUseCases userCases) : ControllerBase
 {
   [HttpGet]
-  public async Task<ActionResult<Response<IEnumerable<UserDto>>>> GetAll([FromQuery] BaseQueryParams bqp)
+  public async Task<ActionResult<Res<IEnumerable<UserDto>>>> GetAll([FromQuery] BaseQueryParams bqp)
   {
-    Response<IEnumerable<UserDto>> response = new();
     try
     {
       var users = await userCases.GetUsers.Execute(bqp);
       Response.AddPaginationHeader(users.MetaData);
-      response.Status = HttpStatusCode.OK;
-      response.Success = true;
-      response.Data = users;
       Log("Get all users successfully");
-      return Ok(response);
+      return Ok(Res<IEnumerable<UserDto>>.Ok(users));
     }
     catch (Exception ex)
     {
-      response.Status = HttpStatusCode.InternalServerError;
-      response.Message = ex.Message;
-      return StatusCode(500, response);
+      return StatusCode(500, Res<IEnumerable<UserDto>>.Fail(ex.Message));
     }
   }
   [HttpPost]
-  public async Task<ActionResult<Response<UserDto>>> Create([FromBody] UserCreateDto dto)
+  public async Task<ActionResult<Res<UserDto>>> Create([FromBody] UserCreateDto dto)
   {
-    Response<UserDto> response = new();
     try
     {
 
       UserDto created = await userCases.AddUser.Execute(dto);
-      response.Status = HttpStatusCode.Created;
-      response.Success = true;
-      response.Data = created;
-      return Ok(response);
+      var res = Res<UserDto>.Ok(created);
+      return Ok(res);
     }
     catch (Exception ex)
     {
-      response.Message=ex.Message;
-      response.Status = HttpStatusCode.InternalServerError;
-      return StatusCode(500, response);
+      return StatusCode(500, Res<UserDto>.Fail(ex.Message));
     }
   }
 }

@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace CoreDriven.Data;
 
-public static class DataDy
+public static class DataDi
 {
     public static void AddData(this IServiceCollection service, IConfiguration configuration)
     {

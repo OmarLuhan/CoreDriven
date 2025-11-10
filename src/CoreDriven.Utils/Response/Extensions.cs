@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace CoreDriven.Utils.Response;
 
-public static class ResponseHeader
+public static class Extensions
 {
     public static void AddPaginationHeader(this HttpResponse response, MetaData metaData)
     {
