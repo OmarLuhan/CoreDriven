@@ -1,0 +1,50 @@
+services:
+  mysql_luhantech:
+    image: mysql:8.0
+    container_name: mysql-luhantech
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789
+      MYSQL_DATABASE: app_luhantech
+      MYSQL_CHARACTER_SET_SERVER: utf8mb4
+      MYSQL_COLLATION_SERVER: utf8mb4_unicode_ci
+    ports:
+      - "3307:3306" # puerto externo diferente
+    volumes:
+      - mysql_data_luhantech:/var/lib/mysql
+      - ./mysql-init/luhantech:/docker-entrypoint-initdb.d
+
+  mysql_liscont:
+    image: mysql:8.0
+    container_name: mysql-liscont
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789
+      MYSQL_DATABASE: app_liscont
+      MYSQL_CHARACTER_SET_SERVER: utf8mb4
+      MYSQL_COLLATION_SERVER: utf8mb4_unicode_ci
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql_data_liscont:/var/lib/mysql
+      - ./mysql-init/liscont:/docker-entrypoint-initdb.d
+
+  mysql_tenorsac:
+    image: mysql:8.0
+    container_name: mysql-tenorsac
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789
+      MYSQL_DATABASE: app_tenorsac
+      MYSQL_CHARACTER_SET_SERVER: utf8mb4
+      MYSQL_COLLATION_SERVER: utf8mb4_unicode_ci
+    ports:
+      - "3309:3306"
+    volumes:
+      - mysql_data_tenorsac:/var/lib/mysql
+      - ./mysql-init/tenorsac:/docker-entrypoint-initdb.d
+
+volumes:
+  mysql_data_luhantech:
+  mysql_data_liscont:
+  mysql_data_tenorsac:

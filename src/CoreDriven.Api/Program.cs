@@ -1,3 +1,4 @@
+using CoreDriven.Api.Middlewares;
 using CoreDriven.Data;
 using CoreDriven.UseCases;
 using Scalar.AspNetCore;
@@ -10,8 +11,9 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
-builder.Services.AddData(builder.Configuration);
+builder.Services.AddData();
 builder.Services.AddUseCases();
+
 WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,6 +26,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseMiddleware<TenantMiddleware>();
 
 app.MapControllers();
 

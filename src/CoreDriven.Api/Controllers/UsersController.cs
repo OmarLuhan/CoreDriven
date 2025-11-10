@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CoreDriven.Api.Controllers;
 [ApiController]
-[Route("[controller]")]
+[Route("{tenant}/[controller]")]
 public class UsersController(UserUseCases userCases) : ControllerBase
 {
   [HttpGet]
