@@ -1,6 +1,7 @@
-﻿using CoreDriven.Data.Repositories;
+﻿using CoreDriven.Data.Configuration;
+using CoreDriven.Data.Providers;
+using CoreDriven.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CoreDriven.Data;
