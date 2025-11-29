@@ -9,8 +9,10 @@ public class ApiKeyMiddleware(RequestDelegate next)
     {
         var path = context.Request.Path;
         // Rutas públicas
-        if (path.StartsWithSegments("/scalar", StringComparison.OrdinalIgnoreCase) ||
-            path.Equals("/openapi/v1.json", StringComparison.OrdinalIgnoreCase))
+        if (path.StartsWithSegments("/scalar", StringComparison.OrdinalIgnoreCase)
+            || path.Equals("/openapi/v1.json", StringComparison.OrdinalIgnoreCase)
+            || path.Equals("/health", StringComparison.OrdinalIgnoreCase)
+            || path.Equals("/health/detailed", StringComparison.OrdinalIgnoreCase))
         {
             await next(context);
             return;
@@ -32,7 +34,7 @@ public class ApiKeyMiddleware(RequestDelegate next)
             throw new UnauthorizedAccessException("Invalid tenant");
         }
         // Validar API Key
-        if (!context.Request.Headers.TryGetValue("apikey", out var apiKey))
+        if (!context.Request.Headers.TryGetValue("api-key", out var apiKey))
         {
             throw new UnauthorizedAccessException("The API Key is missing");
         }

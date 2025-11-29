@@ -6,14 +6,15 @@ public class TenantMiddleware(RequestDelegate next)
 {
     public async Task Invoke(HttpContext context, ITenantProvider tenantProvider)
     {
-        // Ejemplo: /{tenant}/api/usuarios
-        var segments = context.Request.Path.Value?.Split('/', StringSplitOptions.RemoveEmptyEntries);
-        
-        if (segments is { Length: > 0 })
+        // Tomar tenant desde header
+        var tenantId = context.Request.Headers["tenant"].ToString();
+        if (!string.IsNullOrWhiteSpace(tenantId))
         {
-            var tenantId = segments[0];
             tenantProvider.SetTenant(tenantId);
         }
+        if (!string.IsNullOrEmpty(tenantId))
+            tenantProvider.SetTenant(tenantId);
+
         await next(context);
     }
 }

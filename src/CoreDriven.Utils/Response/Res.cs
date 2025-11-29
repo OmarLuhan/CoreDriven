@@ -7,7 +7,7 @@ public class Res<T>
     public bool Success { get; set; }
     public string Message { get; set; }
     public T Data { get; set; }
-    public string? Code { get; set; } // opcional
+    public string? Code { get; set; } 
 
     public static Res<T> Ok(T data, string message = "successful operation") => new()
     {
