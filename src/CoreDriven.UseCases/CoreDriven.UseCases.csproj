@@ -12,4 +12,8 @@
       <ProjectReference Include="..\CoreDriven.Dto\CoreDriven.Dto.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Validot" Version="2.6.0" />
+    </ItemGroup>
+
 </Project>

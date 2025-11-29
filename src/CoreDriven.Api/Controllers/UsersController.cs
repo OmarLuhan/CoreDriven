@@ -30,7 +30,7 @@ public class UsersController(UserUseCases userCases) : ControllerBase
     try
     {
 
-      UserDto created = await userCases.AddUser.Execute(dto);
+      UserDto created = await userCases.CreateUser.Execute(dto);
       var res = Res<UserDto>.Ok(created);
       return Ok(res);
     }

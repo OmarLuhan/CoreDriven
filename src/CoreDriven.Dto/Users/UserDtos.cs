@@ -16,4 +16,4 @@ public record UserCreateDto(
     string Email,
     int RoleId,
     bool Active = true
-    );
+    ):IValidot;

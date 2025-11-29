@@ -2,17 +2,15 @@ using CoreDriven.Data.Entities;
 using CoreDriven.Data.Repositories;
 using CoreDriven.Dto.Users;
 using CoreDriven.UseCases.Mappers;
+using CoreDriven.UseCases.Validator;
 
 namespace CoreDriven.UseCases.Users.Commands;
 
-public class AddUser(IUserRepository repository)
+public class CreateUser(IUserRepository repository)
 {
     public async Task<UserDto> Execute(UserCreateDto dto)
     {
-        if (dto == null)
-        {
-            throw new ArgumentNullException(nameof(dto), "User cannot be null.");
-        }
+        dto.Validate();
         var creation = dto.ToUser();
         creation.Password = "password encrypted"; // Placeholder for password encryption logic
         User user=await repository.AddAsync(creation);

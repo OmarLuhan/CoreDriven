@@ -15,6 +15,6 @@ public static class UseCasesDy
     {
         service.AddScoped<UserUseCases>()
             .AddScoped<GetUsers>()
-            .AddScoped<AddUser>();
+            .AddScoped<CreateUser>();
     }
 }
